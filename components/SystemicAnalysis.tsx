@@ -169,7 +169,7 @@ export default function SystemicAnalysis() {
                     <p className="text-zinc-400 text-sm">Internet Coverage</p>
                   </div>
                   <div className="bg-zinc-800 rounded-lg p-4">
-                    <p className="text-2xl font-bold text-green-400">50+</p>
+                    <p className="text-2xl font-bold text-green-400">3+</p>
                     <p className="text-zinc-400 text-sm">Teachers Trained</p>
                   </div>
                 </div>
