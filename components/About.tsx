@@ -7,7 +7,7 @@ const teamMembers = [
   {
     name: 'Carla Echavarría',
     role: 'Student',
-    image: '/carla.jpeg',
+    image: '/Carla.jpeg',
   },
   {
     name: 'Akshay Thirukumaran',
@@ -17,7 +17,7 @@ const teamMembers = [
   {
     name: 'Antonia Garcia',
     role: 'Student',
-    image: '/antonia.jpeg',
+    image: '/Antonia.jpeg',
   },
   {
     name: 'Joaquín Perez',
