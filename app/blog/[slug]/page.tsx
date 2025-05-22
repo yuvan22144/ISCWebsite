@@ -94,15 +94,10 @@ const blogs: Blog[] = [
     category: 'Planning',
     image: '/blog/planning-day.jpg',
     readTime: '4 min read',
-    content: `On May 12th, we visited la escuelita with the engineer to plan the entire installation process. It was a key day for the project, as we got to learn more about the school's electrical system and work through every detail of the setup.
+    content: `We visited la escuelita on May 12th with the engineer to map out the entire installation process. It was a crucial day in the project because we got to learn more about the electrical system of the school and sort out every aspect of the configuration. We went through the existing power grid thoroughly with the engineer and checked the quality and strength of the signal for the internet. This was necessary so that we are aware of everything working as should be once all the hardware is installed.
 
-    Together with the engineer, we carefully reviewed the existing power network and checked the strength and availability of the signal for the internet. This was crucial to ensure everything runs smoothly once all the equipment is installed.
-
-    We developed a complete installation plan that includes internet setup, computers, printers, speakers, a video beam, and tables. We also took time to clean and prepare the room where everything will be placed, making sure the space is ready for installation day.
-
-    The engineer who joined us played a vital role in assessing the electricity and connection points, helping us make informed decisions to guarantee a safe and efficient installation.
-
-    This day brought us one step closer to bringing digital tools and better resources to the students of la escuelita. We're excited for what's coming next!`,
+    We developed a detailed installation plan incorporating internet setup, computers, printers, speakers, video beam, and tables. We took time to clean and get the room ready where all items will be installed, so the room is prepared for installation day. The joining engineer played a great role in deciding the electricity and connection points, allowing us to make appropriate decisions to provide a safe and efficient installation.This day brought us one step closer to bringing digital tools and better resources to the students of la escuelita. We’re excited for what’s coming next!
+`,
     tags: ['Planning', 'Infrastructure', 'Education', 'Technology', 'Rural Development']
   },
   {
@@ -118,17 +113,12 @@ const blogs: Blog[] = [
     category: 'Project Update',
     image: '/blog/installation-day.jpg',
     readTime: '5 min read',
-    content: `On May 13th, we returned to la escuelita with both an engineer and a technician to carry out the full installation. It was a big day—we finally began setting everything up!
+    content: `On May 13th, we returned to la escuelita with both an engineer and a technician to carry out the full installation. It was a big day—we finally began setting everything up! The technician helped us install the internet antenna and route the network cables down to the router. We organized all the connections, set up the computers, and installed the necessary software to ensure the school had the tools it needs to function efficiently.
 
-    The technician helped us install the internet antenna and route the network cables down to the router. We organized all the connections, set up the computers, and installed the necessary software to ensure the school had the tools it needs to function efficiently.
+    Throughout the day, the engineer and technician also worked alongside us to install and organize all the wiring and the overall system. It was a long process that took the entire day, but the weather was beautiful, and everything went smoothly. We spent time with the students, walking them through what we were doing and explaining how each part of the system works. We also introduced them to the rules and guidelines for using the new equipment, emphasizing the importance of responsible and respectful use.
 
-    Throughout the day, the engineer and technician also worked alongside us to install and organize all the wiring and the overall system. It was a long process that took the entire day, but the weather was beautiful, and everything went smoothly.
-
-    We spent time with the students, walking them through what we were doing and explaining how each part of the system works. We also introduced them to the rules and guidelines for using the new equipment, emphasizing the importance of responsible and respectful use.
-
-    Together with the teacher, the engineer, the students, and our team, we came up with a set of rules that will help ensure the equipment is well-maintained and used wisely.
-
-    This day marked a major milestone in the project, and seeing the students' excitement made it all worth it!`,
+    Together with the teacher, the engineer, the students, and our team, we came up with a set of rules that will help ensure the equipment is well-maintained and used wisely.This day marked a major milestone in the project, and seeing the students’ excitement made it all worth it!
+`,
     tags: ['Installation', 'Technology', 'Education', 'Community', 'Infrastructure']
   },
   {
@@ -145,26 +135,32 @@ const blogs: Blog[] = [
     image: '/blog/manuals.jpg',
     readTime: '6 min read',
     content: `One of the key parts of our project was the creation of digital learning manuals to guide both students and teachers in making the most of the new technology. To do this properly, we had to carefully research and select the most useful, accessible, and relevant educational platforms for children in rural schools.
+We started by asking ourselves two main questions:
+What are the most important and useful tools that Google and the internet offer?
 
-    We started by asking ourselves two main questions:
-    What are the most important and useful tools that Google and the internet offer?
-    What are the primary educational needs of a child in a rural classroom?
 
-    From this, we built a curated list of free and high-quality platforms designed to support learning, exploration, and creativity. Some of the top resources we included in the manuals were:
+What are the primary educational needs of a child in a rural classroom?
 
-    • Khan Academy – A completely free platform that helps students of all levels strengthen their math, science, and reading skills. It's engaging and easy to use.
 
-    • Puntaje Nacional – A free Colombian resource that helps students prepare for the ICFES exam and improve their academic performance.
+From this, we built a curated list of free and high-quality platforms designed to support learning, exploration, and creativity. Some of the top resources we included in the manuals were:
+Khan Academy – A completely free platform that helps students of all levels strengthen their math, science, and reading skills. It’s engaging and easy to use.
 
-    • Google Docs, Slides, and Forms – Essential tools for working on school projects, taking notes, collaborating, and organizing ideas.
 
-    • Duolingo – A fun and interactive way for students to learn new languages and open themselves up to global opportunities.
+Puntaje Nacional – A free Colombian resource that helps students prepare for the ICFES exam and improve their academic performance.
 
-    • YouTube (Educational Content) – A powerful tool for visual and auditory learners, with endless videos on topics ranging from science and history to art and storytelling.
 
-    These platforms were carefully chosen to empower students with the tools they need to grow academically and personally. The manuals, which were installed in both physical and PDF format on each device, are meant to guide them in navigating these tools responsibly and effectively.
+Google Docs, Slides, and Forms – Essential tools for working on school projects, taking notes, collaborating, and organizing ideas.
 
-    We hope this small but powerful guide becomes a bridge for these children to explore the world, expand their minds, and believe in how far they can go.`,
+
+Duolingo – A fun and interactive way for students to learn new languages and open themselves up to global opportunities.
+
+
+YouTube (Educational Content) – A powerful tool for visual and auditory learners, with endless videos on topics ranging from science and history to art and storytelling.
+
+
+These platforms were carefully chosen to empower students with the tools they need to grow academically and personally. The manuals, which were installed in both physical and PDF format on each device, are meant to guide them in navigating these tools responsibly and effectively.
+We hope this small but powerful guide becomes a bridge for these children to explore the world, expand their minds, and believe in how far they can go.
+`,
     tags: ['Education', 'Digital Learning', 'Resources', 'Technology', 'Student Success']
   },
   {
@@ -180,15 +176,16 @@ const blogs: Blog[] = [
     category: 'Project Update',
     image: '/blog/challenging-day.jpg',
     readTime: '4 min read',
-    content: `May 14 was the most difficult day of the entire project. We had planned a training session at 10:00 a.m. with the teachers from the three rural schools to help them get familiar with the new technology. Unfortunately, the night before, on May 13, heavy rain caused a landslide that blocked the main road into the vereda El Espinal.
+    content: `The most difficult day of the whole project was May 14. We had planned a training session at 10:00 a.m. with the teachers at the three schools in the rural area to introduce them to the new technology. The night before, May 13, however, there was heavy rain, which caused a landslide that clogged the main road into vereda El Espinal.
 
-    Antonia García had gone out to buy some materials we needed for the activities with the children, but returning was nearly impossible. A utility pole had fallen during the landslide, and the area was flooded, making it dangerous to cross—especially on foot due to the risk of electrocution. The vereda lost power, and the damage was significant.
+    Antonia García had also stepped out to get some things we would be utilizing during the activities with the kids, but returning was practically impossible. A power pole had been toppled by the landslide, and the area around it was flooded, and it was dangerous crossing it—particularly on foot due to the risk of being electrocuted. The vereda lost power, and the effect was significant.
 
-    As a result, not only were school activities canceled, but we were also unable to carry out our planned sessions with the children to teach them how to use the new devices. It was a disappointing moment for all of us.
+    In turn, not only were school activities canceled, but we were also unable to hold our planned sessions with the children to teach them about the use of the new technology. It was an infuriating experience for us all.
 
-    Despite the setback, we made the most of the situation. Since we were staying in the vereda, we were still able to go to the school and work alongside the teacher. We took the opportunity to add more content to the instruction manual and trained the teacher further on how to use the equipment effectively.
+    Despite the setback, we made the best out of it. Since we were already in the vereda, we could still go to the school and help with the teacher. We took the opportunity to put in more content in the instruction manual and retrained the teacher once again on the proper use of the equipment.
 
-    We also completed the installation by adding a few missing cables from the previous day. Even though the day didn't go as planned, we managed to finalize everything and ensure the school was fully set up and ready.`,
+    We also completed the setup by hooking up some cables that had been left out the previous day. Even though the day did not go according to plan, we managed to tie everything up and have the school set up and ready.
+`,
     tags: ['Challenges', 'Community', 'Education', 'Resilience', 'Project Update']
   },
   {
@@ -204,15 +201,7 @@ const blogs: Blog[] = [
     category: 'Impact',
     image: '/blog/donations.jpg',
     readTime: '4 min read',
-    content: `One of the most powerful moments of our project came when we received over 9 million Colombian pesos in donations. This incredible support allowed us to go beyond just the basic setup and truly transform the learning environments of the three rural schools we were working with.
-
-    We invited each school to create a kind of "wish list," identifying their most urgent needs and the tools that would most significantly improve their learning spaces. Based on these lists, we built a detailed budget to make sure our impact was meaningful and targeted.
-
-    Thanks to our amazing partnership with Full Hogar, we were able to get everything the schools needed at excellent prices. But the generosity didn't stop there — they also gifted us additional items to give the schools even more resources and privileges. Through this collaboration, we were able to acquire essential appliances that improved the classroom environments and overall study conditions.
-
-    Even better, we had enough leftover funds to pay for 16 months of internet service for the school. When combined with the support from SEE Change, which had already funded 12 months, we reached a total of 28 months of internet fully paid.
-
-    This level of support gave the schools not just tools for today, but also a more sustainable and connected future. It was a huge reminder that real change happens when communities come together with a shared purpose.`,
+    content: `Some of the most moving moments of our project were when we collected over 9 million Colombian pesos in donations. This incredible kindness allowed us to do more than the bare minimum installation and truly transform the learning environment of the three rural schools we were working with. We requested that each school create a form of "wish list," identifying their biggest needs and the equipment that would best improve their learning environment. Based on those lists, we drew up an overall budget so our impact would be significant and targeted. Thanks to our amazing partnership with Full Hogar, we could get whatever was required by the schools at cheap rates. But the generosity did not stop there — they also gave us other things so that we could equip the schools with even more resources and benefits. With this partnership, we could also buy vital appliances that enriched the classroom environments as well as the overall learning environments. Better still, we had enough excess cash to pay for 16 months' worth of internet for the school. Coupled with the SEE Change funding, which was already funding 12 months, we had a total of 28 months' worth of internet paid for. This degree of support endowed the schools with not only equipment for the present, but a more sustainable and networked future. It was a sobering reminder that real change comes when communities come together with a shared vision.`,
     tags: ['Donations', 'Community Support', 'Education', 'Sustainability', 'Impact']
   },
   {
@@ -228,15 +217,15 @@ const blogs: Blog[] = [
     category: 'Community',
     image: '/blog/farewell.jpg',
     readTime: '5 min read',
-    content: `May 15 was the last day we were able to visit La Escuelita. Even though the landslide had made access to the vereda extremely difficult, we managed to find a way through — and what a final adventure it was! Despite the obstacles, we made it back to the school, determined to spend this special day with the children.
+    content: `May 15 was our last day that we were allowed to visit La Escuelita. While the landslide had made it very difficult to enter the vereda, we had found a path through — and what a final adventure it was! Despite the challenges, we ended up returning to the school resolved to spend this special day with the children.
+We had planned meaningful activities to wrap up the project. The first was a promise activity: all the students signed a promise (or gave their word, in the case of the younger students) to take care of and make the most of the new machines. We reviewed the rules with them again and told them just how much this chance means for their future.
 
-    We had planned meaningful activities to wrap up the project. The first was a commitment activity: each student signed a pledge (or gave a verbal one, in the case of the younger children) to care for and make the most of the new devices. We reviewed the rules with them one more time and helped them understand just how valuable this opportunity is for their future.
+But the highlight of the day was with our second activity — a moment that stirred our hearts. We gave each child a piece of paper and asked them to write down what these new opportunities meant to them. Some scribbled them down, some drew pictures, and others simply verbalized their dreams. On the back of the paper, the handprint of every child was put, symbolizing their desire to leave their mark on the future — to transform, to evolve, and to make their mark on the world in their own way.
 
-    But the most powerful moment of the day was our second activity — one that truly touched our hearts. We gave each child a sheet of paper and asked them to express what these new opportunities meant to them. Some wrote words, some drew pictures, and some simply shared their dreams out loud. On the back of the paper, each child placed their handprint, symbolizing their desire to leave a mark on the future — to grow, to learn, and to impact the world in their own way.
+While all this was happening, one of our staff members was secretly loading PDF copies of the user guides onto each and every computer. This uncovered not just the hard copies, but also digital copies which the schools could access whenever they needed them, so that they could make full use of every tool.
 
-    While the activities were happening, one of our team members was busy behind the scenes installing PDF versions of the user manuals on each computer. This way, the schools wouldn't just have physical copies, but also digital versions that could be accessed anytime, ensuring they could make the most of every tool provided.
-
-    We ended the day by saying goodbye to the children, filled with emotion and pride in everything we had accomplished together. This project was never just about technology — it was about connection, growth, and planting seeds of opportunity in places full of potential.`,
+We ended the day saying goodbye to the children, our hearts full of tears and pride at all we had accomplished together. This project was never ever about technology itself — it was about connection, learning, and planting the seeds of possibility in fields teeming with hope.
+`,
     tags: ['Community', 'Education', 'Student Success', 'Impact', 'Future']
   }
 ];

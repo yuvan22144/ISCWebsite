@@ -5,9 +5,9 @@ import Link from 'next/link';
 
 export default function Hero() {
   const scrollToNextSection = () => {
-    const nextSection = document.getElementById('about');
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
+    const videoSection = document.getElementById('video-section');
+    if (videoSection) {
+      videoSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
