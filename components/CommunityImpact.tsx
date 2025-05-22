@@ -22,8 +22,8 @@ export default function CommunityImpact() {
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">Digital Bridges Impact</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <MetricCard icon={School} title="Schools Supported" value="10+" />
-          <MetricCard icon={Users} title="Students Reached" value="2,000+" />
+          <MetricCard icon={School} title="Schools Supported" value="4+" />
+          <MetricCard icon={Users} title="Students Reached" value="20+" />
           <MetricCard icon={Wifi} title="Internet Connections" value="100% Coverage" />
         </div>
       </div>

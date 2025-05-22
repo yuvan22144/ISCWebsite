@@ -4,9 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Globe } from 'lucide-react';
-import About from './About';
-import Goals from './Goals';
-import BlogList from './BlogList';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,12 +19,6 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const navLinks = [
-    { href: '../components/About', label: 'About' },
-    { href: '../components/Goals', label: 'Goals' },
-    { href: '../components/BlogList', label: 'Updates' },
-  ];
 
   // Determine if we should use dark text
   const shouldUseDarkText = isScrolled || isBlogPage;
@@ -55,17 +46,6 @@ export default function Navbar() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`text-sm font-medium transition-colors hover:text-zinc-600 ${
-                    shouldUseDarkText ? 'text-zinc-900' : 'text-white'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
               <Link
                 href="/blog"
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
@@ -109,16 +89,6 @@ export default function Navbar() {
             className="fixed top-16 left-0 right-0 bg-white shadow-lg md:hidden z-40"
           >
             <div className="px-4 py-4 space-y-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="block text-zinc-900 hover:text-zinc-600 font-medium py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
               <Link
                 href="/blog"
                 className="block w-full text-center px-4 py-3 rounded-full bg-zinc-900 text-white hover:bg-zinc-800 font-medium mt-4"

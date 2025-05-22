@@ -5,6 +5,7 @@ import Goals from '@/components/Goals';
 import BlogList from '@/components/BlogList';
 import CommunityImpact from '@/components/CommunityImpact';
 import SystemicAnalysis from '@/components/SystemicAnalysis';
+import VideoSection from '@/components/VideoSection';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Goals />
       <SystemicAnalysis />
+      <VideoSection />
       <CommunityImpact />
       <BlogList />
     </div>

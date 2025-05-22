@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Home } from 'lucide-react';
 
 type Blog = {
   title: string;
@@ -27,7 +28,7 @@ const blogs: Blog[] = [
     date: 'March 15, 2024',
     author: {
       name: 'Digital Bridges Team',
-      avatar: '/avatars/team.jpg',
+      avatar: '/globe.svg',
       bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
     },
     category: 'Education',
@@ -47,7 +48,7 @@ const blogs: Blog[] = [
     date: 'March 10, 2024',
     author: {
       name: 'Digital Bridges Team',
-      avatar: '/avatars/team.jpg',
+      avatar: '/globe.svg',
       bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
     },
     category: 'Community',
@@ -69,7 +70,7 @@ const blogs: Blog[] = [
     date: 'March 5, 2024',
     author: {
       name: 'Digital Bridges Team',
-      avatar: '/avatars/team.jpg',
+      avatar: '/globe.svg',
       bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
     },
     category: 'Social Media',
@@ -80,6 +81,164 @@ const blogs: Blog[] = [
     Furthermore, to keep the aesthetic of the account, we uploaded 6 posts with different information and photos regarding our mission and project goals. This digital presence is helping us build momentum and create a broader impact for our mission.`,
     tags: ['Social Media', 'Digital Marketing', 'Community Engagement', 'Education', 'Instagram']
   },
+  {
+    title: 'Planning Day at the Escuelita',
+    description: 'Our crucial planning session with the engineer to assess electrical systems and develop a comprehensive installation strategy.',
+    slug: 'planning-day',
+    date: 'May 12, 2024',
+    author: {
+      name: 'Digital Bridges Team',
+      avatar: '/globe.svg',
+      bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
+    },
+    category: 'Planning',
+    image: '/blog/planning-day.jpg',
+    readTime: '4 min read',
+    content: `On May 12th, we visited la escuelita with the engineer to plan the entire installation process. It was a key day for the project, as we got to learn more about the school's electrical system and work through every detail of the setup.
+
+    Together with the engineer, we carefully reviewed the existing power network and checked the strength and availability of the signal for the internet. This was crucial to ensure everything runs smoothly once all the equipment is installed.
+
+    We developed a complete installation plan that includes internet setup, computers, printers, speakers, a video beam, and tables. We also took time to clean and prepare the room where everything will be placed, making sure the space is ready for installation day.
+
+    The engineer who joined us played a vital role in assessing the electricity and connection points, helping us make informed decisions to guarantee a safe and efficient installation.
+
+    This day brought us one step closer to bringing digital tools and better resources to the students of la escuelita. We're excited for what's coming next!`,
+    tags: ['Planning', 'Infrastructure', 'Education', 'Technology', 'Rural Development']
+  },
+  {
+    title: 'Installation Day at La Escuelita',
+    description: 'A successful day of installing internet, computers, and setting up the entire digital infrastructure with the help of our technical team.',
+    slug: 'installation-day',
+    date: 'May 13, 2024',
+    author: {
+      name: 'Digital Bridges Team',
+      avatar: '/globe.svg',
+      bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
+    },
+    category: 'Project Update',
+    image: '/blog/installation-day.jpg',
+    readTime: '5 min read',
+    content: `On May 13th, we returned to la escuelita with both an engineer and a technician to carry out the full installation. It was a big day—we finally began setting everything up!
+
+    The technician helped us install the internet antenna and route the network cables down to the router. We organized all the connections, set up the computers, and installed the necessary software to ensure the school had the tools it needs to function efficiently.
+
+    Throughout the day, the engineer and technician also worked alongside us to install and organize all the wiring and the overall system. It was a long process that took the entire day, but the weather was beautiful, and everything went smoothly.
+
+    We spent time with the students, walking them through what we were doing and explaining how each part of the system works. We also introduced them to the rules and guidelines for using the new equipment, emphasizing the importance of responsible and respectful use.
+
+    Together with the teacher, the engineer, the students, and our team, we came up with a set of rules that will help ensure the equipment is well-maintained and used wisely.
+
+    This day marked a major milestone in the project, and seeing the students' excitement made it all worth it!`,
+    tags: ['Installation', 'Technology', 'Education', 'Community', 'Infrastructure']
+  },
+  {
+    title: 'Completing the Manuals: Building a Bridge to Knowledge',
+    description: 'We created comprehensive digital learning manuals featuring carefully selected educational platforms to empower students and teachers.',
+    slug: 'learning-manuals',
+    date: 'May 13, 2024',
+    author: {
+      name: 'Digital Bridges Team',
+      avatar: '/globe.svg',
+      bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
+    },
+    category: 'Education',
+    image: '/blog/manuals.jpg',
+    readTime: '6 min read',
+    content: `One of the key parts of our project was the creation of digital learning manuals to guide both students and teachers in making the most of the new technology. To do this properly, we had to carefully research and select the most useful, accessible, and relevant educational platforms for children in rural schools.
+
+    We started by asking ourselves two main questions:
+    What are the most important and useful tools that Google and the internet offer?
+    What are the primary educational needs of a child in a rural classroom?
+
+    From this, we built a curated list of free and high-quality platforms designed to support learning, exploration, and creativity. Some of the top resources we included in the manuals were:
+
+    • Khan Academy – A completely free platform that helps students of all levels strengthen their math, science, and reading skills. It's engaging and easy to use.
+
+    • Puntaje Nacional – A free Colombian resource that helps students prepare for the ICFES exam and improve their academic performance.
+
+    • Google Docs, Slides, and Forms – Essential tools for working on school projects, taking notes, collaborating, and organizing ideas.
+
+    • Duolingo – A fun and interactive way for students to learn new languages and open themselves up to global opportunities.
+
+    • YouTube (Educational Content) – A powerful tool for visual and auditory learners, with endless videos on topics ranging from science and history to art and storytelling.
+
+    These platforms were carefully chosen to empower students with the tools they need to grow academically and personally. The manuals, which were installed in both physical and PDF format on each device, are meant to guide them in navigating these tools responsibly and effectively.
+
+    We hope this small but powerful guide becomes a bridge for these children to explore the world, expand their minds, and believe in how far they can go.`,
+    tags: ['Education', 'Digital Learning', 'Resources', 'Technology', 'Student Success']
+  },
+  {
+    title: 'A Challenging Day: Overcoming Obstacles',
+    description: 'Despite a landslide blocking access to the school, we adapted our plans and continued working to ensure the technology setup was complete.',
+    slug: 'challenging-day',
+    date: 'May 14, 2024',
+    author: {
+      name: 'Digital Bridges Team',
+      avatar: '/globe.svg',
+      bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
+    },
+    category: 'Project Update',
+    image: '/blog/challenging-day.jpg',
+    readTime: '4 min read',
+    content: `May 14 was the most difficult day of the entire project. We had planned a training session at 10:00 a.m. with the teachers from the three rural schools to help them get familiar with the new technology. Unfortunately, the night before, on May 13, heavy rain caused a landslide that blocked the main road into the vereda El Espinal.
+
+    Antonia García had gone out to buy some materials we needed for the activities with the children, but returning was nearly impossible. A utility pole had fallen during the landslide, and the area was flooded, making it dangerous to cross—especially on foot due to the risk of electrocution. The vereda lost power, and the damage was significant.
+
+    As a result, not only were school activities canceled, but we were also unable to carry out our planned sessions with the children to teach them how to use the new devices. It was a disappointing moment for all of us.
+
+    Despite the setback, we made the most of the situation. Since we were staying in the vereda, we were still able to go to the school and work alongside the teacher. We took the opportunity to add more content to the instruction manual and trained the teacher further on how to use the equipment effectively.
+
+    We also completed the installation by adding a few missing cables from the previous day. Even though the day didn't go as planned, we managed to finalize everything and ensure the school was fully set up and ready.`,
+    tags: ['Challenges', 'Community', 'Education', 'Resilience', 'Project Update']
+  },
+  {
+    title: 'A Wave of Generosity: Over 9 Million Pesos in Donations',
+    description: 'Thanks to incredible community support, we secured over 9 million pesos in donations, enabling us to provide 28 months of internet service and essential equipment.',
+    slug: 'generous-donations',
+    date: 'May 14, 2024',
+    author: {
+      name: 'Digital Bridges Team',
+      avatar: '/globe.svg',
+      bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
+    },
+    category: 'Impact',
+    image: '/blog/donations.jpg',
+    readTime: '4 min read',
+    content: `One of the most powerful moments of our project came when we received over 9 million Colombian pesos in donations. This incredible support allowed us to go beyond just the basic setup and truly transform the learning environments of the three rural schools we were working with.
+
+    We invited each school to create a kind of "wish list," identifying their most urgent needs and the tools that would most significantly improve their learning spaces. Based on these lists, we built a detailed budget to make sure our impact was meaningful and targeted.
+
+    Thanks to our amazing partnership with Full Hogar, we were able to get everything the schools needed at excellent prices. But the generosity didn't stop there — they also gifted us additional items to give the schools even more resources and privileges. Through this collaboration, we were able to acquire essential appliances that improved the classroom environments and overall study conditions.
+
+    Even better, we had enough leftover funds to pay for 16 months of internet service for the school. When combined with the support from SEE Change, which had already funded 12 months, we reached a total of 28 months of internet fully paid.
+
+    This level of support gave the schools not just tools for today, but also a more sustainable and connected future. It was a huge reminder that real change happens when communities come together with a shared purpose.`,
+    tags: ['Donations', 'Community Support', 'Education', 'Sustainability', 'Impact']
+  },
+  {
+    title: 'Leaving Our Mark: A Farewell Filled with Meaning',
+    description: 'Our final day at La Escuelita was filled with emotional moments as students shared their dreams and made commitments to care for their new digital tools.',
+    slug: 'farewell-day',
+    date: 'May 15, 2024',
+    author: {
+      name: 'Digital Bridges Team',
+      avatar: '/globe.svg',
+      bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
+    },
+    category: 'Community',
+    image: '/blog/farewell.jpg',
+    readTime: '5 min read',
+    content: `May 15 was the last day we were able to visit La Escuelita. Even though the landslide had made access to the vereda extremely difficult, we managed to find a way through — and what a final adventure it was! Despite the obstacles, we made it back to the school, determined to spend this special day with the children.
+
+    We had planned meaningful activities to wrap up the project. The first was a commitment activity: each student signed a pledge (or gave a verbal one, in the case of the younger children) to care for and make the most of the new devices. We reviewed the rules with them one more time and helped them understand just how valuable this opportunity is for their future.
+
+    But the most powerful moment of the day was our second activity — one that truly touched our hearts. We gave each child a sheet of paper and asked them to express what these new opportunities meant to them. Some wrote words, some drew pictures, and some simply shared their dreams out loud. On the back of the paper, each child placed their handprint, symbolizing their desire to leave a mark on the future — to grow, to learn, and to impact the world in their own way.
+
+    While the activities were happening, one of our team members was busy behind the scenes installing PDF versions of the user manuals on each computer. This way, the schools wouldn't just have physical copies, but also digital versions that could be accessed anytime, ensuring they could make the most of every tool provided.
+
+    We ended the day by saying goodbye to the children, filled with emotion and pride in everything we had accomplished together. This project was never just about technology — it was about connection, growth, and planting seeds of opportunity in places full of potential.`,
+    tags: ['Community', 'Education', 'Student Success', 'Impact', 'Future']
+  }
 ];
 
 interface PageProps {
@@ -177,6 +336,17 @@ export default async function BlogPost({ params, searchParams }: PageProps) {
                 </span>
               ))}
             </div>
+          </div>
+
+          {/* Back to Home Button */}
+          <div className="mt-12 text-center">
+            <Link
+              href="/"
+              className="inline-flex items-center space-x-2 text-zinc-600 hover:text-zinc-900 transition-colors bg-white px-6 py-3 rounded-full shadow-md hover:shadow-lg"
+            >
+              <Home className="w-5 h-5" />
+              <span>Back to Home</span>
+            </Link>
           </div>
         </div>
 

@@ -7,22 +7,22 @@ const teamMembers = [
   {
     name: 'Carla Echavarría',
     role: 'Student',
-    image: '/avatars/carla.jpg',
+    image: '/carla.jpeg',
   },
   {
     name: 'Akshay Thirukumaran',
     role: 'Student',
-    image: '/avatars/akshay.jpg',
+    image: '/akshay.jpeg',
   },
   {
     name: 'Antonia Garcia',
     role: 'Student',
-    image: '/avatars/antonia.jpg',
+    image: '/antonia.jpeg',
   },
   {
     name: 'Joaquín Perez',
     role: 'Student',
-    image: '/avatars/joaquin.jpg',
+    image: '/joaquin.jpeg',
   },
 ];
 
@@ -33,6 +33,13 @@ const stats = [
 ];
 
 export default function About() {
+  const scrollToVideo = () => {
+    const videoSection = document.querySelector('#video-section');
+    if (videoSection) {
+      videoSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-20 px-6 bg-zinc-50">
       <div className="max-w-7xl mx-auto">
@@ -54,16 +61,10 @@ export default function About() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={scrollToVideo}
                 className="bg-zinc-900 text-white px-6 py-3 rounded-lg font-medium"
               >
                 Learn More
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-zinc-900 text-zinc-900 px-6 py-3 rounded-lg font-medium"
-              >
-                Contact Us
               </motion.button>
             </div>
           </motion.div>
@@ -71,13 +72,15 @@ export default function About() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="relative h-[400px] rounded-2xl overflow-hidden"
+            className="relative h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-2xl overflow-hidden"
           >
             <Image
-              src="/about-hero.jpg"
+              src="/img1.jpeg"
               alt="Students in rural Colombia"
               fill
-              className="object-cover"
+              className="object-cover object-[center_5%] sm:object-[center_10%] md:object-[center_15%]"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
+              priority
             />
           </motion.div>
         </div>
@@ -111,12 +114,13 @@ export default function About() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white rounded-xl shadow-lg overflow-hidden"
               >
-                <div className="relative h-64">
+                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] w-full p-2">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover"
+                    className="object-cover object-[center_20%] sm:object-[center_25%] md:object-[center_30%] rounded-lg"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   />
                 </div>
                 <div className="p-6 text-center">

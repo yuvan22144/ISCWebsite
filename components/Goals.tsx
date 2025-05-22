@@ -96,14 +96,14 @@ export default function Goals() {
                   <div className="h-2 bg-zinc-100 rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
-                      animate={{ width: "75%" }}
+                      animate={{ width: "100%" }}
                       transition={{ duration: 1, delay: index * 0.2 }}
                       className="h-full bg-zinc-900 rounded-full"
                     />
                   </div>
                   <div className="flex justify-between mt-2 text-sm text-zinc-500">
                     <span>Progress</span>
-                    <span>75%</span>
+                    <span>100%</span>
                   </div>
                 </div>
               </div>
