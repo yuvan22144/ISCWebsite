@@ -1,0 +1,147 @@
+"use client"
+
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { Users, School, Wifi, Target, Star, Heart } from 'lucide-react';
+
+export default function AboutPage() {
+  return (
+    <div className="min-h-screen bg-zinc-50">
+      <div className="max-w-7xl mx-auto px-4 pt-28 pb-16">
+        <h1 className="text-5xl font-bold text-center mb-12">About Our Project</h1>
+        
+        {/* Mission Statement */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="bg-white rounded-2xl p-8 shadow-lg mb-12"
+        >
+          <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+          <p className="text-lg text-zinc-600 leading-relaxed">
+            We are a team of four dedicated students from The Columbus School, driven by a shared passion to make a meaningful impact in Colombia's educational landscape. Our goal is to provide children in rural schools with access to high-quality education, digital tools, and internet connectivity.
+          </p>
+        </motion.div>
+
+        {/* Impact Stats */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {[
+            { icon: School, value: '3', label: 'Schools Supported' },
+            { icon: Users, value: '50+', label: 'Students Impacted' },
+            { icon: Wifi, value: '100%', label: 'Internet Coverage' }
+          ].map((stat, index) => (
+            <motion.div
+              key={stat.label}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-white p-8 rounded-xl shadow-lg text-center"
+            >
+              <stat.icon className="w-12 h-12 text-zinc-900 mx-auto mb-4" />
+              <h3 className="text-4xl font-bold text-zinc-900 mb-2">{stat.value}</h3>
+              <p className="text-zinc-600">{stat.label}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Vision Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="bg-zinc-900 text-white rounded-2xl p-12 mb-12 relative overflow-hidden"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-zinc-800 rounded-full -mr-32 -mt-32" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-zinc-800 rounded-full -ml-32 -mb-32" />
+          <div className="relative z-10">
+            <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4">
+                  <Target className="w-6 h-6 text-zinc-400 mt-1" />
+                  <div>
+                    <h4 className="text-xl font-semibold mb-2">Short-term Goals</h4>
+                    <p className="text-zinc-400">
+                      Equip rural schools with digital tools and provide comprehensive training for teachers and students.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <Star className="w-6 h-6 text-zinc-400 mt-1" />
+                  <div>
+                    <h4 className="text-xl font-semibold mb-2">Long-term Impact</h4>
+                    <p className="text-zinc-400">
+                      Establish a sustainable digital education network, ensuring continuous support and innovation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4">
+                  <Heart className="w-6 h-6 text-zinc-400 mt-1" />
+                  <div>
+                    <h4 className="text-xl font-semibold mb-2">Success Metrics</h4>
+                    <p className="text-zinc-400">
+                      Increased student engagement, improved academic performance, and the integration of digital literacy into the curriculum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Team Section */}
+        <div className="mb-12">
+          <h3 className="text-3xl font-bold text-zinc-800 text-center mb-12">Meet Our Team</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                name: 'Carla Echavarría',
+                role: 'Student',
+                image: '/Carla.jpeg',
+              },
+              {
+                name: 'Akshay Thirukumaran',
+                role: 'Student',
+                image: '/akshay.jpeg',
+              },
+              {
+                name: 'Antonia Garcia',
+                role: 'Student',
+                image: '/Antonia.jpeg',
+              },
+              {
+                name: 'Joaquín Perez',
+                role: 'Student',
+                image: '/joaquin.jpeg',
+              },
+            ].map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+              >
+                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] w-full p-2">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover object-[center_20%] sm:object-[center_25%] md:object-[center_30%] rounded-lg"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h4 className="text-xl font-semibold text-zinc-900 mb-2">{member.name}</h4>
+                  <p className="text-zinc-600">{member.role}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+} 

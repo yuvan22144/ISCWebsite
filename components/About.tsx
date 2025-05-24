@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Users, School, Wifi, Target, Star, Heart } from 'lucide-react';
+import Link from 'next/link';
 
 const teamMembers = [
   {
@@ -58,14 +59,15 @@ export default function About() {
               We are a team of four dedicated students from The Columbus School, driven by a shared passion to make a meaningful impact in Colombia's educational landscape. Our goal is to provide children in rural schools with access to high-quality education, digital tools, and internet connectivity.
             </p>
             <div className="flex gap-4">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={scrollToVideo}
-                className="bg-zinc-900 text-white px-6 py-3 rounded-lg font-medium"
-              >
-                Learn More
-              </motion.button>
+              <Link href="/about">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-zinc-900 text-white px-6 py-3 rounded-lg font-medium"
+                >
+                  Learn More
+                </motion.button>
+              </Link>
             </div>
           </motion.div>
           <motion.div
