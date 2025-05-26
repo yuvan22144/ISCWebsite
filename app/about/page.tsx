@@ -4,8 +4,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Users, School, Wifi, Target, Star, Heart, Calendar, Book, Laptop, Globe, GraduationCap, Youtube, Brain, Languages, Award } from 'lucide-react';
 import Link from 'next/link';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
 
 const timelineData = [
   {
@@ -55,7 +53,7 @@ export default function AboutPage() {
         >
           <div className="flex items-center gap-4 mb-8">
             <Book className="w-12 h-12 text-zinc-900" />
-            <h2 className="text-3xl font-bold">Manual Básico de Computación</h2>
+            <h2 className="text-3xl font-bold">Basic Computer Manual</h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -225,47 +223,112 @@ export default function AboutPage() {
             
             {/* Timeline items */}
             <div className="space-y-8 relative z-10">
-              {timelineData.map((item, index) => {
-                const ref = useRef(null);
-                const isInView = useInView(ref, { once: true, margin: "-100px" });
-                
-                return (
-                  <motion.div
-                    key={item.date}
-                    ref={ref}
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-                    transition={{ duration: 0.5, delay: index * 0.2 }}
-                    className={`relative flex items-center ${
-                      index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-                    }`}
-                  >
-                    {/* Timeline dot */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rounded-full ring-4 ring-zinc-800"></div>
-                    
-                    {/* Content */}
-                    <div className={`w-5/12 ${index % 2 === 0 ? 'pr-12' : 'pl-12'}`}>
-                      <motion.div
-                        initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                        animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                        transition={{ duration: 0.5, delay: index * 0.2 + 0.2 }}
-                        className="bg-zinc-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-                      >
-                        <div className="flex items-center gap-2 mb-3">
-                          <Calendar className="w-5 h-5 text-zinc-400" />
-                          <span className="text-sm font-semibold text-zinc-300 bg-zinc-700 px-3 py-1 rounded-full">{item.date}</span>
-                        </div>
-                        <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                        <p className="text-zinc-400 leading-relaxed">{item.description}</p>
-                      </motion.div>
-                    </div>
-                  </motion.div>
-                );
-              })}
+              {timelineData.map((item, index) => (
+                <motion.div
+                  key={item.date}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  className={`relative flex items-center ${
+                    index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+                  }`}
+                >
+                  {/* Timeline dot */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rounded-full ring-4 ring-zinc-800"></div>
+                  
+                  {/* Content */}
+                  <div className={`w-5/12 ${index % 2 === 0 ? 'pr-12' : 'pl-12'}`}>
+                    <motion.div
+                      initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.2 }}
+                      className="bg-zinc-800 rounded-xl p-6"
+                    >
+                      <div className="text-sm text-zinc-400 mb-2">{item.date}</div>
+                      <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                      <p className="text-zinc-300">{item.description}</p>
+                    </motion.div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
         </div>
       </div>
+
+      {/* Full-bleed Image Carousel Section */}
+      {(() => {
+        const images = [
+          { src: '/i01.jpeg' },
+          { src: '/i02.jpeg' },
+          { src: '/i03.jpeg' },
+          { src: '/i04.jpeg' },
+          { src: '/i05.jpeg' },
+          { src: '/i06.jpeg' },
+          { src: '/i07.jpeg' },
+          { src: '/i08.jpeg' },
+          { src: '/i09.jpeg' },
+          { src: '/i10.jpeg' },
+          { src: '/i11.jpeg' },
+          { src: '/i12.jpeg' },
+          { src: '/i13.jpeg' },
+          { src: '/i14.jpeg' },
+          { src: '/i15.jpeg' },
+        ];
+        return (
+          <div className="w-screen relative left-1/2 right-1/2 -translate-x-1/2 overflow-hidden bg-zinc-900 py-12">
+            <motion.div
+              className="flex gap-4"
+              animate={{
+                x: [0, -3000],
+              }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 30,
+                  ease: "linear",
+                },
+              }}
+            >
+              {/* First set of images */}
+              {images.map((img, index) => (
+                <div
+                  key={`first-${index}`}
+                  className="relative w-[300px] h-[260px] flex-shrink-0"
+                >
+                  <Image
+                    src={img.src}
+                    alt={`Project Image ${index + 1}`}
+                    fill
+                    className="object-cover rounded-lg"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectPosition: 'top' }}
+                  />
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {images.map((img, index) => (
+                <div
+                  key={`second-${index}`}
+                  className="relative w-[300px] h-[260px] flex-shrink-0"
+                >
+                  <Image
+                    src={img.src}
+                    alt={`Project Image ${index + 1}`}
+                    fill
+                    className="object-cover rounded-lg"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectPosition: 'top' }}
+                  />
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        );
+      })()}
     </div>
   );
 } 
