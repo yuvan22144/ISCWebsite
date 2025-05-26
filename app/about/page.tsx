@@ -205,6 +205,131 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* Game System Section */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12">Interactive Learning Game</h2>
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="space-y-6">
+                <p className="text-lg text-zinc-600 leading-relaxed">
+                  This game assists rural school students in learning fundamental computer skills via entertaining and interactive weekly missions. They perform activities such as typing in Google Docs, creating folders, or taking online quizzes. Through these missions, they score points and medals, making learning enjoyable. Students are in small groups, decide on their own team name and logo, and participate in friendly competition using free tools such as Kahoot, Quizizz, and ClassDojo.
+                </p>
+                <p className="text-lg text-zinc-600 leading-relaxed">
+                  Not only does the game teach digital literacy, but it also teaches collaboration, creativity, and online safety. The game gets the students comfortable with technology and encourages them to keep practicing. By learning through playing and in a social context, students are prepared to be more successful in school and in life in a world where technology is predominant.
+                </p>
+              </div>
+              <div className="bg-zinc-50 rounded-xl p-6 border border-zinc-200">
+                <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                  <Target className="w-5 h-5" />
+                  Key Benefits
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <Users className="w-5 h-5 text-zinc-600 mt-1" />
+                    <span className="text-zinc-600">Team-based learning and collaboration</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Star className="w-5 h-5 text-zinc-600 mt-1" />
+                    <span className="text-zinc-600">Gamified learning experience</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Heart className="w-5 h-5 text-zinc-600 mt-1" />
+                    <span className="text-zinc-600">Safe and engaging digital environment</span>
+                  </li>
+                </ul>
+
+                {/* Game Platform Images */}
+                <div className="mt-6 grid grid-cols-2 gap-4">
+                  <div className="relative h-24 rounded-lg overflow-hidden">
+                    <Image
+                      src="/Kahoot_Logo.svg.png"
+                      alt="Kahoot Platform"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="relative h-24 rounded-lg overflow-hidden">
+                    <Image
+                      src="/Quizziz_Logo.png"
+                      alt="Quizizz Platform"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Points System Table */}
+            <div className="bg-zinc-900 text-white rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-6 text-center">Points System (Sistema de Puntos)</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b border-zinc-700">
+                      <th className="text-left py-3 px-4">Action / Activity</th>
+                      <th className="text-center py-3 px-4">Points Earned</th>
+                      <th className="text-left py-3 px-4">Comment</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-zinc-800">
+                      <td className="py-3 px-4">Answer correctly in Kahoot</td>
+                      <td className="text-center py-3 px-4">+10 points</td>
+                      <td className="py-3 px-4">Encourages accuracy and attention</td>
+                    </tr>
+                    <tr className="border-b border-zinc-800">
+                      <td className="py-3 px-4">First to answer correctly</td>
+                      <td className="text-center py-3 px-4">+5 extra points</td>
+                      <td className="py-3 px-4">For speed and reflexes</td>
+                    </tr>
+                    <tr className="border-b border-zinc-800">
+                      <td className="py-3 px-4">Active participation in discussion</td>
+                      <td className="text-center py-3 px-4">+5 points</td>
+                      <td className="py-3 px-4">Promotes collaboration and idea sharing</td>
+                    </tr>
+                    <tr className="border-b border-zinc-800">
+                      <td className="py-3 px-4">Help a struggling classmate</td>
+                      <td className="text-center py-3 px-4">+10 points</td>
+                      <td className="py-3 px-4">Values teamwork</td>
+                    </tr>
+                    <tr className="border-b border-zinc-800">
+                      <td className="py-3 px-4">Complete a manual lesson</td>
+                      <td className="text-center py-3 px-4">+15 points</td>
+                      <td className="py-3 px-4">Autonomous learning and resource use</td>
+                    </tr>
+                    <tr className="border-b border-zinc-800">
+                      <td className="py-3 px-4">Teach something new to another group</td>
+                      <td className="text-center py-3 px-4">+20 points</td>
+                      <td className="py-3 px-4">Reinforces collaborative learning</td>
+                    </tr>
+                    <tr className="border-b border-zinc-800">
+                      <td className="py-3 px-4">Create a Google Slides presentation</td>
+                      <td className="text-center py-3 px-4">+20 points</td>
+                      <td className="py-3 px-4">Practical tool usage</td>
+                    </tr>
+                    <tr className="border-b border-zinc-800">
+                      <td className="py-3 px-4">Use educational platforms for 30 minutes</td>
+                      <td className="text-center py-3 px-4">+15 points</td>
+                      <td className="py-3 px-4">Rewards continuous effort</td>
+                    </tr>
+                    <tr className="border-b border-zinc-800">
+                      <td className="py-3 px-4">Participate in weekly Digital Stars Challenge</td>
+                      <td className="text-center py-3 px-4">+30 points</td>
+                      <td className="py-3 px-4">Core gamification activity</td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 px-4">Maintain good digital conduct</td>
+                      <td className="text-center py-3 px-4">+10 points weekly</td>
+                      <td className="py-3 px-4">Encourages digital safety</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Timeline Section */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-center mb-12">Project Timeline</h2>
