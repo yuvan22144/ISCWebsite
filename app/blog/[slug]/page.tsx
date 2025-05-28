@@ -92,7 +92,7 @@ const blogs: Blog[] = [
       bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
     },
     category: 'Planning',
-    image: '/blog/planning-day.jpg',
+    image: '/02.jpeg',
     readTime: '4 min read',
     content: `We visited la escuelita on May 12th with the engineer to map out the entire installation process. It was a crucial day in the project because we got to learn more about the electrical system of the school and sort out every aspect of the configuration. We went through the existing power grid thoroughly with the engineer and checked the quality and strength of the signal for the internet. This was necessary so that we are aware of everything working as should be once all the hardware is installed.
 
@@ -112,7 +112,7 @@ const blogs: Blog[] = [
     },
     category: 'Project Update',
     image: '/blog/installation-day.jpg',
-    readTime: '5 min read',
+    readTime: '/05.jpeg',
     content: `On May 13th, we returned to la escuelita with both an engineer and a technician to carry out the full installation. It was a big day—we finally began setting everything up! The technician helped us install the internet antenna and route the network cables down to the router. We organized all the connections, set up the computers, and installed the necessary software to ensure the school had the tools it needs to function efficiently.
 
     Throughout the day, the engineer and technician also worked alongside us to install and organize all the wiring and the overall system. It was a long process that took the entire day, but the weather was beautiful, and everything went smoothly. We spent time with the students, walking them through what we were doing and explaining how each part of the system works. We also introduced them to the rules and guidelines for using the new equipment, emphasizing the importance of responsible and respectful use.
@@ -132,7 +132,7 @@ const blogs: Blog[] = [
       bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
     },
     category: 'Education',
-    image: '/blog/manuals.jpg',
+    image: '/04.jpeg',
     readTime: '6 min read',
     content: `One of the key parts of our project was the creation of digital learning manuals to guide both students and teachers in making the most of the new technology. To do this properly, we had to carefully research and select the most useful, accessible, and relevant educational platforms for children in rural schools.
 We started by asking ourselves two main questions:
@@ -174,7 +174,7 @@ We hope this small but powerful guide becomes a bridge for these children to exp
       bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
     },
     category: 'Project Update',
-    image: '/blog/challenging-day.jpg',
+    image: '/03.jpeg',
     readTime: '4 min read',
     content: `The most difficult day of the whole project was May 14. We had planned a training session at 10:00 a.m. with the teachers at the three schools in the rural area to introduce them to the new technology. The night before, May 13, however, there was heavy rain, which caused a landslide that clogged the main road into vereda El Espinal.
 
@@ -215,7 +215,7 @@ We hope this small but powerful guide becomes a bridge for these children to exp
       bio: 'A team of dedicated students from The Columbus School: Carla Echavarría, Akshay Thirukumaran, Antonia Garcia, and Joaquín Perez.'
     },
     category: 'Community',
-    image: '/blog/farewell.jpg',
+    image: '/06.jpeg',
     readTime: '5 min read',
     content: `May 15 was our last day that we were allowed to visit La Escuelita. While the landslide had made it very difficult to enter the vereda, we had found a path through — and what a final adventure it was! Despite the challenges, we ended up returning to the school resolved to spend this special day with the children.
 We had planned meaningful activities to wrap up the project. The first was a promise activity: all the students signed a promise (or gave their word, in the case of the younger students) to take care of and make the most of the new machines. We reviewed the rules with them again and told them just how much this chance means for their future.

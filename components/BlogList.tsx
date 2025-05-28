@@ -69,7 +69,7 @@ const blogs: Blog[] = [
       avatar: '/globe.svg'
     },
     category: 'Planning',
-    image: '/',
+    image: '/02.jpeg',
     readTime: '4 min read'
   },
   {
@@ -82,7 +82,7 @@ const blogs: Blog[] = [
       avatar: '/globe.svg'
     },
     category: 'Project Update',
-    image: '/',
+    image: '/03.jpeg',
     readTime: '5 min read'
   },
   {
@@ -95,7 +95,7 @@ const blogs: Blog[] = [
       avatar: '/globe.svg'
     },
     category: 'Education',
-    image: '/',
+    image: '/04.jpeg',
     readTime: '6 min read'
   },
   {
@@ -108,7 +108,7 @@ const blogs: Blog[] = [
       avatar: '/globe.svg'
     },
     category: 'Project Update',
-    image: '/',
+    image: '/05.jpeg',
     readTime: '4 min read'
   },
   {
@@ -121,7 +121,7 @@ const blogs: Blog[] = [
       avatar: '/globe.svg'
     },
     category: 'Impact',
-    image: '/',
+    image: '/06.jpeg',
     readTime: '4 min read'
   },
   {
@@ -134,7 +134,7 @@ const blogs: Blog[] = [
       avatar: '/globe.svg'
     },
     category: 'Community',
-    image: '/',
+    image: '/i04.jpeg',
     readTime: '5 min read'
   }
 ];
@@ -189,12 +189,13 @@ export default function BlogList() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.5 }}
                   >
-                    <div className="relative h-56 w-full">
+                    <div className="relative h-72 w-full">
                       <Image
                         src={blog.image}
                         alt={blog.title}
                         fill
-                        className="object-cover object-[center_10%] scale-110"
+                        className={`object-cover ${blog.slug === 'bridging-digital-divide' ? 'object-top' : ''}`}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                       <div className="absolute top-4 left-4">
                         <span className="bg-zinc-900 text-white px-3 py-1 rounded-full text-sm">
